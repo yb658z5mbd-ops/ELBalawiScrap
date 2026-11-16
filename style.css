@@ -1,0 +1,373 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background: #f7f7f5;
+    color: #202322;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+
+header {
+    background: #111a18;
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.logo span {
+    color: #c99b45;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #eee;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d5a64d;
+}
+
+.language-btn {
+    background: transparent;
+    color: #d5a64d;
+    border: 1px solid #d5a64d;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* Hero */
+
+.hero {
+    min-height: 590px;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(90deg, rgba(10, 18, 16, 0.92), rgba(10, 18, 16, 0.65)),
+    url('https://excelrecycle.com/assets/scrap-metal-market-forecast-2026-CRc2LU6f.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 8%;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.subtitle,
+.section-heading > p,
+.about-content > p:first-child,
+.contact > p:first-child {
+    color: #c99b45;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    font-size: clamp(32px, 5vw, 55px);
+    line-height: 1.5;
+    margin: 20px 0;
+    font-weight: 900;
+}
+
+.hero-text {
+    color: #ddd;
+    font-size: 18px;
+    line-height: 2;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.main-btn,
+.secondary-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.main-btn {
+    background: #c99b45;
+    color: #111a18;
+}
+
+.main-btn:hover {
+    background: #e0b65f;
+}
+
+.secondary-btn {
+    border: 1px solid white;
+    color: white;
+}
+
+.secondary-btn:hover {
+    background: white;
+    color: #111a18;
+}
+
+/* Services */
+
+.services {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading h2,
+.contact h2 {
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.service-card {
+    background: white;
+    padding: 30px;
+    border: 1px solid #e8e5dd;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-7px);
+    border-color: #c99b45;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+}
+
+.service-card span {
+    color: #c99b45;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.service-card h3 {
+    margin: 15px 0 8px;
+    font-size: 20px;
+}
+
+.service-card p {
+    color: #777;
+    line-height: 1.9;
+    font-size: 14px;
+}
+
+/* About */
+
+.about {
+    background: #111a18;
+    color: white;
+    padding: 85px 0;
+}
+
+.about-content {
+    max-width: 850px;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 32px;
+    margin: 15px 0;
+}
+
+.about-content > p:last-child {
+    color: #ccc;
+    line-height: 2.2;
+    font-size: 17px;
+}
+
+/* Contact */
+
+.contact {
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.contact > p:not(:first-child) {
+    color: #777;
+    margin: 15px 0 25px;
+}
+
+.map-link {
+    display: block;
+    margin-top: 20px;
+    color: #806020;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Footer */
+
+footer {
+    background: #0b100f;
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+}
+
+/* English direction */
+
+body.english {
+    direction: ltr;
+    text-align: left;
+}
+
+body.english .hero {
+    text-align: left;
+}
+
+body.english .section-heading,
+body.english .contact {
+    text-align: center;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    .nav {
+        flex-wrap: wrap;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .hero {
+        min-height: 520px;
+        padding: 60px 6%;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2,
+    .contact h2 {
+        font-size: 28px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+}
+
+.map-container {
+    margin-top: 35px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 3px solid #c99b45;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.map-container iframe {
+    display: block;
+    width: 100%;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    background: #25D366;
+    color: white;
+    padding: 13px 22px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    transition: 0.3s;
+}
+
+.whatsapp-float:hover {
+    background: #128C7E;
+    transform: translateY(-4px);
+}
+
+.service-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 7px;
+    margin-bottom: 18px;
+    display: block;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25D366;
+  color: white;
+  padding: 14px 22px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 9999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
